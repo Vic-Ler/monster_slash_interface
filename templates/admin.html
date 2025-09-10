@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Interface</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/logic.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Admin Interface</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="form-box">
+      <button class="submit-btn" onclick="closeRound()">Runde abschließen</button>
+    </div>
+
+    <div class="form-box">
+      <h2>Aktuelle Runde: <span id="currentRound">1</span></h2>
+      <ul id="playerList"></ul>
+    </div>
+  </main>
+
+  <script>
+    // Automatische Aktualisierung alle 2 Sekunden
+    setInterval(loadRoundData, 2000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Interface</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/logic.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="/static/icon.png" alt="Logo" class="header-icon">
+    <h1>Player Interface</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="form-box">
+      <form id="playerForm">
+        <label for="playerName">Name:</label>
+        <input type="text" id="playerName" required>
+
+        <label for="weapon">Waffe:</label>
+        <select id="weapon">
+          <option value="Sword">Sword</option>
+          <option value="Axe">Axe</option>
+          <option value="Bow">Bow</option>
+          <option value="Dagger">Dagger</option>
+        </select>
+
+        <label for="monster">Monster:</label>
+        <select id="monster">
+          <option value="Goblin">Goblin</option>
+          <option value="Orc">Orc</option>
+          <option value="Troll">Troll</option>
+        </select>
+
+        <label for="hp">Leben:</label>
+        <input type="number" id="hp" required>
+        <div><br></div>
+
+        <button type="submit" class="submit-btn">Absenden</button>
+      </form>
+    </div>
+
+    <!-- Statusmeldung -->
+    <p id="status"></p>
+  </main>
+</body>
+</html>
